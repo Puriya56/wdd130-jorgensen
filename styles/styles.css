@@ -1,0 +1,121 @@
+/* --- Color Palette from Site Plan --- */
+:root {
+    --bg-primary: #0B0711;
+    --text-secondary: #E6E4EA;
+    --accent-purple: #7B2CBF;
+    --text-white: #FFFFFF;
+}
+
+/* --- General Styles --- */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-secondary);
+    font-family: 'Comfortaa', cursive; /* Paragraph font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Oswald', sans-serif; /* Heading font */
+    color: var(--text-white);
+}
+
+/* --- Header and Navigation --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #150E22; /* Slightly lighter background to create contrast */
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--text-white);
+}
+
+nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-purple);
+}
+
+/* --- Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+/* --- Buttons --- */
+.button {
+    display: inline-block;
+    background-color: var(--accent-purple);
+    color: var(--text-white);
+    padding: 15px 40px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #5d2192; /* Darker purple on hover */
+}
+
+/* --- Content Sections (Movies, Formats, Specs) --- */
+.content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto 80px auto; /* Centers the section and adds bottom spacing */
+    gap: 40px;
+    padding: 0 20px;
+}
+
+/* Class to reverse the image and text alignment (The Formats) */
+.content-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-box {
+    flex: 1;
+}
+
+.text-box h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.content-section img {
+    flex: 1;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border: 3px solid var(--accent-purple);
+    border-radius: 8px; /* Slightly rounded corners for a modern look */
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #150E22;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
